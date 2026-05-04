@@ -11,4 +11,4 @@ COPY model.pt .
 ENV AI_PORT=5000
 EXPOSE 5000
 
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
+CMD ["gunicorn", "app:app", "--timeout", "120", "--workers", "1"]
