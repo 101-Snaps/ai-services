@@ -171,6 +171,8 @@ def get_db_connection():
         user=os.getenv("DB_USER", "root"),
         password=os.getenv("DB_PASSWORD", ""),
         database=os.getenv("DB_NAME", "railway")
+        ssl_disabled=False,
+        connection_timeout=10
     )
 
 
