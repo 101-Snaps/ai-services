@@ -170,7 +170,7 @@ def get_db_connection():
         port=int(os.getenv("DB_PORT", 3306)),
         user=os.getenv("DB_USER", "root"),
         password=os.getenv("DB_PASSWORD", ""),
-        database=os.getenv("DB_NAME", "railway")
+        database=os.getenv("DB_NAME", "railway"),
         ssl_disabled=False,
         connection_timeout=10
     )
